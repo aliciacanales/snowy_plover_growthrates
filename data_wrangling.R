@@ -1,5 +1,6 @@
 library(tidyverse) 
 library(growthrates)
+library(glarma)
 library(purrr)
 
 ## Datasets of either nesting or individual WSPs
@@ -28,3 +29,7 @@ hayward <- data.frame(year = c(seq(2010, 2023, 1)),
                       individuals = c(12, 8, 9, 32, 7, 2, 4, 1, 7, 12, 19, 56, 36, 5)) ## https://www.southbayrestoration.org/sites/default/files/documents/wspl_and_clte_monitoring_in_the_sf_bay_annual_report_2023_final_01-24-24.pdf
 eden_landing <- data.frame(year = c(seq(2010, 2023, 1)),
                            individuals = c(184, 185, 82, 97, 94, 76, 120, 144, 142, 117, 115, 44, 89, 116)) ## same pdf as above. ecological reserve
+
+
+el_nino_yrs <- data.frame(year = c(seq(2001, 2023, 1)),
+                          presence = c(0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1)) ## https://ggweather.com/enso/oni.html 
