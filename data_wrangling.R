@@ -2,6 +2,7 @@ library(tidyverse)
 library(growthrates)
 library(glarma)
 library(purrr)
+library(ggplot2)
 
 ## Datasets of either nesting or individual WSPs
 
