@@ -6,7 +6,6 @@
 
 ## Create a function that solves for year to year variability of growthrates
 
-
 ## Use a for loop to calculate the growth rate using equation a(grwth_rt) = nt+1/nt
 
 growth_rate_fcn <- function(df) {
@@ -33,7 +32,7 @@ huntington_beach <- map_df(.x = list(huntington_beach), ~growth_rate_fcn(.x)) %>
   drop_na() ## mean GR = 3.3669 but has an outlier the first year
 
 malibu_lagoon <- map_df(.x = list(malibu_lagoon), ~growth_rate_fcn(.x)) %>% 
-  drop_na() ## mean GR = 2.359633
+  drop_na() ## mean GR = 2.359633 but has an outlier
 
 ormond_breeding_adults <- map_df(.x = list(ormond_breeding_adults), ~growth_rate_fcn(.x)) %>% 
   drop_na() ## mean GR = 1.401753
