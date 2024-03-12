@@ -39,10 +39,6 @@ par(mfrow = c(1, 2))
 plot(mdl3, log = "y", cex.lab = 2, cex.axis = 2) ## logged
 plot(mdl3, cex.lab = 2, cex.axis = 2)
 
-
-
-
-
 ## Copr
 copr_nesting %>%
   ggplot(aes(x = year, y = number_of_nests)) +
